@@ -1,14 +1,16 @@
 import React from 'react'
 import './App.css';
 import Row from './Row';
-import { useGlobalContext } from './context'
+import { useGlobalContext } from './context';
+import Cover from './Cover';
 
 function App() {
 
   const { requests } = useGlobalContext()
   return (
     <div className="app">
-      <h1>NETFLIX Clone</h1>
+      
+      <Cover />
       <Row title='NETFLIX Originals' url={requests.netflix_originals} isOriginal/>
       <Row title='Trending' url={requests.trending}/>
       <Row title='Top Rated' url={requests.top_rated}/>
