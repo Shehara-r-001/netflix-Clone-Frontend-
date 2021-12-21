@@ -104,3 +104,34 @@ code {
     #0d0d0d
   );
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 1rem;
+  height: 2.4rem;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.netflix-logo {
+  position: fixed;
+  left: 1rem;
+  object-fit: contain;
+  width: 5rem;
+}
+
+.netflix-avatar {
+  position: fixed;
+  right: 1rem;
+  object-fit: contain;
+  width: 2rem;
+}
+
+.navbar-blackbg {
+    background-color: black;
+}

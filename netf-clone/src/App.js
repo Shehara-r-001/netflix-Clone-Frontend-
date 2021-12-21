@@ -3,13 +3,14 @@ import './App.css';
 import Row from './Row';
 import { useGlobalContext } from './context';
 import Cover from './Cover';
+import Navbar from './Navbar'
 
 function App() {
 
   const { requests } = useGlobalContext()
   return (
     <div className="app">
-      
+      <Navbar />
       <Cover />
       <Row title='NETFLIX Originals' url={requests.netflix_originals} isOriginal/>
       <Row title='Trending' url={requests.trending}/>
